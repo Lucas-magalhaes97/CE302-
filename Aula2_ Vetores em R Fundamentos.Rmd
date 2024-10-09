@@ -1,0 +1,44 @@
+---
+title: "Aula02_ Vetores em R Fundamentos"
+author: "Lucas Ast"
+date: "2024-10-05"
+output: html_document
+----
+
+# Vetores em R: Fundamentos
+
+Em R, vetores são estruturas de dados fundamentais que armazenam elementos de um mesmo tipo. Eles desempenham um papel crucial na linguagem, permitindo o armazenamento eficiente e a manipulação de dados. Os aspectos principais de vetores em R são:
+
+1. Homogeneidade: Vetores em R contêm elementos do mesmo tipo. Isso significa que um vetor não pode conter uma mistura de números, caracteres e outros tipos de dados. A homogeneidade é uma característica essencial para operaçõeseficientes.
+
+2. Criação de Vetores: Você pode criar vetores usando a função c() (combine) ou a função vector(). Por exemplo, vetor_numerico <- c(1, 2, 3, 4, 5) cria um vetor numérico com os valores de 1 a 5.
+
+```{r}
+# Mexendo com vetores no R
+vetor_numerico <- c(1,2,3,4,5)
+vetor_numerico
+
+sequencia_1_5 <- seq(1:5)
+sequencia_1_5
+
+sequencia_10_100 <- seq(from = 10,
+                        to = 100, 
+                        by = 5)
+sequencia_10_100
+
+```
+
+3. Acesso a Elementos: Os elementos de um vetor podem ser acessados usando índices. O primeiro elemento tem índice 1, o segundo índice 2, e assim por diante. Por exemplo, vetor_numerico[3] retorna o terceiro elemento do vetor.
+
+```{r}
+vetor_numerico[1]
+
+vetor_numerico[3]
+```
+
+4. Operações em Vetores: R permite realizar operações em vetores de forma conveniente e eficiente. Operações aritméticas e relacionais podem ser aplicadas elemento a elemento. Por exemplo, vetor_resultado <- vetor_numerico * 2 multiplica cada elemento por 2.
+
+5. Funções em Vetores: Muitas funções do R são vetorizadas, o que significa que elas podem operar diretamente em vetores. Isso evita a necessidade de loops explícitos. Por exemplo, mean(vetor_numerico) calcula a média dos elementos do vetor.
+
+6. Fatiamento de Vetores: Além de acessar elementos individuais, é possível fatiar vetores para obter subconjuntos. Por exemplo, subconjunto <- vetor_numerico[2:4] cria um novo vetor contendo os elementos do índice 2 ao 4.
+

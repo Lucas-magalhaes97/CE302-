@@ -1,0 +1,7 @@
+install.packages("rmarkdown")
+install.packages("ggplot2")
+install.packages("shiny")
+install.packages("quarto")
+install.packages("quantmod")
+install.packages("TTR")
+install.packages("SharpeR")

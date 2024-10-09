@@ -1,0 +1,111 @@
+---
+title: "Aula01_Programação básica em R"
+author: "Lucas Ast"
+date: "2024-10-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Tradução:
+
+Esse é o documento R Markdown. O Markdown é uma sintaxe de formatação simples para criação de documentos em HTML, PDF, and MS Word. 
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+Tradução:
+
+Quando você clica no botão "Knitt" será gerado um documento que inclui tanto o conteúdo quanto a saída de qualquer pedaços de códigos em R incorporados no documento. Você pode incorporar um documento um pedaço de código em R seguindo a formatação abaixo: 
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+Tradução:
+
+Você pode pode incorporar plots (gráficos), por exemplo:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Tradução:
+
+Obeserve que o parâmetro 'echo = FALSE' foi adicionado ao bloco de código para evitar a impressão do código R que gerou o gráfico
+
+## Programação básica de códigos em R
+
+### Operações Matemáticas
+```{r}
+#atribuindo um valor para uma variável
+x <- 5
+y <- 10
+# operação aritmética
+soma <- x+y
+soma
+
+subtração <- x-y
+subtração
+
+multiplicação <- x*y
+multiplicação
+
+divisão <- x/y
+divisão
+
+exponenciação <- x*y
+exponenciação
+
+modulo <- x%%y # cálcula o resto da divisão
+modulo
+
+divisão_inteira <- x%/%y # cálcula a divisão retornando o resultado como um número inteiro 
+divisão_inteira
+```
+
+## Operadores Relacionais
+```{r}
+#atribuindo valores as variáveis
+a <- 10
+b <- 20
+
+# == (igual a ): Verifica se os dois valores são iguais
+igual_a <- a == b
+igual_a
+
+# != (Diferente de): Verifica se dois valores são diferentes.
+diferente_de <- b != a
+diferente_de
+
+# > (Maior que): Verifica se o valor à esquerda é maior do que o valor à direita.
+maior_que <- a > b
+maior_que
+
+# < (menor que): Verifica se o valor à esquerda é menor do que o valor à direita.
+menor_que <- a < b
+menor_que
+
+# >= (Maior ou igual a): Verifica se o valor à esquerda é maior ou igual ao valor à direita.
+maior_ou_igual <- a >= b
+maior_ou_igual
+
+# <= (Menor ou igual a): Verifica se o valor à esquerda é menor ou igual ao valor à direita.
+menor_ou_igual <- a <= b
+menor_ou_igual
+
+# operadores lógicos
+(1 == 1) & (2 == 2) # E / AND
+(1 == 1) | (2 == 3) # OU / OR
+!(1 == 2) # NÃO / NOT
+```
